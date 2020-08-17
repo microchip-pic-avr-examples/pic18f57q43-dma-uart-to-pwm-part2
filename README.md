@@ -1,5 +1,5 @@
 <!-- Please do not change this html logo with link -->
-<a href="https://www.microchip.com" rel="nofollow"><img src="images/Microchip.png" alt="MCHP" width="300"/></a>
+[![MCHP](https://cldup.com/U0qhLwBijF.png)](https://www.microchip.com) 
 
 # Direct Memory Access (DMA) on PIC MCUs [Part 2] - UART to PWM
 
@@ -19,21 +19,21 @@ This is part 2 of 2 of an example showing how to set up [Direct Memory Access (D
 ## Software Used
 
 All software used in this example is listed here:
-- MPLAB® X IDE 5.30 or newer - [link](https://www.microchip.com/mplab/mplab-x-ide)
-- MPLAB® XC8 2.10 or a newer compiler - [link](https://www.microchip.com/mplab/compilers)
-- MPLAB® Code Configurator (MCC) 3.95.0 or newer - [link](https://www.microchip.com/mplab/mplab-code-configurator)
-- MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs - [link](https://www.microchip.com/mplab/mplab-code-configurator)
-- Microchip PIC18F-Q Series Device Support (1.4.109) or newer - [link](https://packs.download.microchip.com/)
+- [MPLAB® X IDE 5.30](https://www.microchip.com/mplab/mplab-x-ide) or newer
+- [MPLAB® XC8 2.10 compiler](https://www.microchip.com/mplab/compilers) or newer
+- [MPLAB® Code Configurator (MCC) 3.95.0](https://www.microchip.com/mplab/mplab-code-configurator) or newer 
+  - [MCC Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs](https://www.microchip.com/mplab/mplab-code-configurator)
+- [Microchip PIC18F-Q Series Device Support (1.4.109)](https://packs.download.microchip.com/) or newer
 
 ## Hardware Used
-- PIC18F47Q10 Curiosity Nano [(DM164150)](https://www.microchip.com/Developmenttools/ProductDetails/DM164150)
-  - NOTE: There is second one used in part 1 --LINK--
-- Potentiometer (x1) - used in part 1
-- **[Optional]** Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162) - this was only used in lieu of a breadboard.
+- **PIC18F57Q43 Curiosity Nano** [(DM164150)](https://www.microchip.com/Developmenttools/ProductDetails/DM164150)
+  - **NOTE:** There is second device used in [part 1](https://github.com/microchip-pic-avr-examples/pic18f57q43-dma-adc-to-uart-part1)
+- **Potentiometer (x1)** - used in [part 1](https://github.com/microchip-pic-avr-examples/pic18f57q43-dma-adc-to-uart-part1)
+- **[Optional]** Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162) - this was used in lieu of a breadboard.
 
 ## Setup
 
-The hardware is setup as shown more closely in this video --LINK--. Below is a diagram where of the specific pins I used. You'll notice the Curiosity Nano Baseboard for clicks is missing from this diagram as they were really only used as breadboard-alternatives in this case.
+The hardware is setup as shown more closely in [**this video**](https://www.youtube.com/watch?v=Wz7gt11gpSw). Below is a diagram of the specific pins used. You'll notice the Curiosity Nano Baseboard for clicks is missing from this diagram as they were really only used as alternative to a breadboard in this case.
 
 ![](images/hardware_setup.jpg)
 
@@ -46,7 +46,7 @@ The hardware is setup as shown more closely in this video --LINK--. Below is a d
 
 ## Operation
 
-As noted before - this is part 2 of 2 of an example showing how to set up [Direct Memory Access (DMA)](https://www.microchip.com/design-centers/8-bit/peripherals/core-independent/direct-memory-access) using the [Microchip Code Configurator (MCC)](https://www.microchip.com/mplab/mplab-code-configurator) on a [PIC18F57Q43 microcontroller](https://www.microchip.com/wwwproducts/en/PIC18F57Q43) to transfer data from the devices UART recieve buffer to the PWM duty cycle register to alter the brightness of an LED based on the incoming serial messages from the device we set up in part 1. 
+As noted before - this is part 2 of 2 of an example showing how to set up [Direct Memory Access (DMA)](https://www.microchip.com/design-centers/8-bit/peripherals/core-independent/direct-memory-access) using the [Microchip Code Configurator (MCC)](https://www.microchip.com/mplab/mplab-code-configurator) on a [PIC18F57Q43 microcontroller](https://www.microchip.com/wwwproducts/en/PIC18F57Q43) to transfer data from the devices UART recieve buffer to the PWM duty cycle register to alter the brightness of an LED based on the incoming serial messages from the device we set up in [**part 1.**](https://github.com/microchip-pic-avr-examples/pic18f57q43-dma-adc-to-uart-part1)
 
 ## Summary
 ![](images/part2-gif.gif)
@@ -54,7 +54,7 @@ As noted before - this is part 2 of 2 of an example showing how to set up [Direc
 ## Walkthrough
 
 ## Create New MPLAB X Project and Open MCC
-1. Same as before in part 1 -- LINK -- 
+1. Same as before in [part 1](https://github.com/microchip-pic-avr-examples/pic18f57q43-dma-adc-to-uart-part1), but restated here for clarity. 
 2. Open the MPLAB X IDE
 3. Create new project by clicking the icon: ![](images/new_project_icon.png)   
    1. Alternatively: file >> New Project
@@ -132,3 +132,5 @@ As noted before - this is part 2 of 2 of an example showing how to set up [Direc
 16. Hit **Generate Project** and
 17. Hit **Program the device** ![](images/program-device-icon.png)
 
+## Conclusion
+There you have it. You just implemented some systems coms, waveform control. and analog interface with zero lines of code. Feel free to build on the project as you see fit, find more detailed applications in the documents linked in the [**resource section**](#related-documentation), or check out other code examples in the repo. 

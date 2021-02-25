@@ -9,7 +9,7 @@
         "projectName": "pic18f57q43-dma-uart-to-pwm-part2",
         "shortDescription": "Part 2 example showing how to use DMA to transfer data from UART recieve buffer to PWM duty cycle register to control a PWM.",
         "ide": {
-            "name": "MPLABX",
+            "name": "MPLAB X",
             "semverRange": ">=5.30.0"
         },
         "compiler": [

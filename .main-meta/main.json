@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f57q43-dma-uart-to-pwm-part2",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "displayName": "DMA controlled LED dimming via Serial Stream",
         "projectName": "pic18f57q43-dma-uart-to-pwm-part2",
         "shortDescription": "Part 2 example showing how to use DMA to transfer data from UART recieve buffer to PWM duty cycle register to control a PWM.",
@@ -36,7 +36,7 @@
                 "versionRange": "*"
             }
         },
-        "author": "Patrick Kennedy",
+        "author": "Microchip",
         "subcategories": [
             "MCC",
             [
@@ -47,15 +47,16 @@
             ],
             [
                "Peripherals", "PWM"
-            ]            			
+            ]
         ],
         "peripherals": [
             "DMA","UART","PWM"
         ],
         "keywords": [
             "MCC",
-            "Core Independent",
-			"PIC18"
+            "UART",
+            "PWM",
+            "DMA"
         ],
 		"additionalData": {
 			"longDescription": {

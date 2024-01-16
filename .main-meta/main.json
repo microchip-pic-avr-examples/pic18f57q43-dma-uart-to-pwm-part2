@@ -2,20 +2,20 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f57q43-dma-uart-to-pwm-part2",
-        "version": "1.0.2",
+        "version": "2.0.0",
         "displayName": "DMA controlled LED dimming via Serial Stream",
         "projectName": "pic18f57q43-dma-uart-to-pwm-part2",
         "shortDescription": "Part 2 example showing how to use DMA to transfer data from UART recieve buffer to PWM duty cycle register to control a PWM.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.30.0"
+            "semverRange": ">=6.15.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.10.0"
+				"semverRange": "^2.45.0"
 			}
 		],
         "dfp": {
@@ -24,7 +24,7 @@
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.95.0"
+            "semverRange": ">=5.5.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,28 +36,9 @@
                 "versionRange": "*"
             }
         },
-        "author": "Microchip",
-        "subcategories": [
-            "MCC",
-            [
-               "Peripherals", "DMA"
-            ],
-            [
-               "Peripherals", "UART"
-            ],
-            [
-               "Peripherals", "PWM"
-            ]
-        ],
-        "peripherals": [
-            "DMA","UART","PWM"
-        ],
-        "keywords": [
-            "MCC",
-            "UART",
-            "PWM",
-            "DMA"
-        ],
+        "author": "Jamus Griego",
+        "peripherals": ["DMA", "UART", "PWM"],
+        "keywords": ["Melody", "Curiosity Nano"],
 		"additionalData": {
 			"longDescription": {
 				"metaDataVersion": "1.0.0",

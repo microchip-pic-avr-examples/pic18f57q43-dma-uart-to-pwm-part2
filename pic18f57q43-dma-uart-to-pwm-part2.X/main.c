@@ -41,7 +41,7 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
+#include "mcc_generated_files/system/system.h"
 
 /*
                          Main application
@@ -60,6 +60,8 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
+    
+    PWM1LDS = 0xB;   // PWM1 auto-load trigger source is DMA1_Destination_Count_Done
 
     while (1)
     {

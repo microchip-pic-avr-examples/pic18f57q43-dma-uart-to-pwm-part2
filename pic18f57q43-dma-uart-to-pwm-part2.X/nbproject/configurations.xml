@@ -31,7 +31,6 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>MyConfig.mc3</itemPath>
       <itemPath>pic18f57q43-dma-uart-to-pwm-part2.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -230,6 +229,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/C16369/MCHP_Code_Examples/pic18f57q43-dma-uart-to-pwm-part2/pic18f57q43-dma-uart-to-pwm-part2.X/debug/free/pic18f57q43-dma-uart-to-pwm-part2_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -477,6 +478,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/C16369/MCHP_Code_Examples/pic18f57q43-dma-uart-to-pwm-part2/pic18f57q43-dma-uart-to-pwm-part2.X/debug/pro/pic18f57q43-dma-uart-to-pwm-part2_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
